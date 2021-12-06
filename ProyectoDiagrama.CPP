@@ -31,8 +31,22 @@ int i;
 	}
 outtextxy(70,30,"Planteamiento del problema.");
 line(68,40,285,40);
+////Descripcion
+outtextxy(40,90,"Las varillas AB y BC tienen");
+outtextxy(40,105,"un diametro 'd' en mm cada una.");
+outtextxy(40,120,"Si se aplica una carga 'P' al anillo,");
+outtextxy(40,135,"determine la tensi¢n media en ");
+outtextxy(40,150,"cada varilla si 0 = 60ø.");
+outtextxy(40,200,"Considerando el equilibrio de la junta B:");
+outtextxy(80,230,"P - FAB sin60ø = 0");
+outtextxy(80,250,"FAB cos60ø - FBC = 0  ");
+outtextxy(40,300,"El  rea de la secci¢n transversal de los");
+outtextxy(40,315,"varillas AB y BC es: ");
+outtextxy(80,345,"AAB = ABC = pi/4(d * d)");
+outtextxy(40,430,"Presiona una tecla para calcular el problema   ------->");
+
 rectangle(25,20,620,450);
-	getch();
+	//getch();
 	setlinestyle(0,0,3); //Cambio de tipo de linea flecha derecha
 	line(571,200,590,200); //Linea flecha derecha
 	int puntosFlecha[6]={590,195,590,205,610,200};//Flecha derecha
