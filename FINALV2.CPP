@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
+#include<stdlib.h>
+#include<string.h>
 #include<graphics.h>
-
 void dibujardiagrama(){
 	setlinestyle(0,0,3); //Cambio de tipo de linea flecha derecha
 	line(571,200,590,200); //Linea flecha derecha
@@ -151,7 +152,7 @@ getch();
 //cleardevice();
 //setgraphmode(modo);
 		 //Si el dato ingresado es correcto hacemos los calculos
-		 if(p>0 && p<101){
+		 if(p>0 && p<101 && d>0 && d<101){
 cleardevice();
 		 // Empiezan los calculos
 FAB = p / sin(60*M_PI/180);
@@ -220,6 +221,7 @@ outtextxy(190,255,"BC");
 		 }
 	}while(p>100);//se repite mientras p sea mayor a 100
 	closegraph();
+
 
 }
 
